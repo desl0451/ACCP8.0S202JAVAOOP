@@ -1,0 +1,5 @@
+D:\Work\ACCP8.0\ACCPS2\2.使用Java实现面向对象编程\JavaOOP\Chapter04\CSharpChapter4\CSharpChapter4\obj\Debug\CSharpChapter4.csprojResolveAssemblyReference.cache
+D:\Work\ACCP8.0\ACCPS2\2.使用Java实现面向对象编程\JavaOOP\Chapter04\CSharpChapter4\CSharpChapter4\bin\Debug\CSharpChapter4.exe
+D:\Work\ACCP8.0\ACCPS2\2.使用Java实现面向对象编程\JavaOOP\Chapter04\CSharpChapter4\CSharpChapter4\bin\Debug\CSharpChapter4.pdb
+D:\Work\ACCP8.0\ACCPS2\2.使用Java实现面向对象编程\JavaOOP\Chapter04\CSharpChapter4\CSharpChapter4\obj\Debug\CSharpChapter4.exe
+D:\Work\ACCP8.0\ACCPS2\2.使用Java实现面向对象编程\JavaOOP\Chapter04\CSharpChapter4\CSharpChapter4\obj\Debug\CSharpChapter4.pdb

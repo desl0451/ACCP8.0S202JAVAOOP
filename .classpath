@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="Chapter01"/>
+	<classpathentry kind="src" path="Chapter02"/>
+	<classpathentry kind="src" path="Chapter03"/>
+	<classpathentry kind="src" path="Chapter04"/>
+	<classpathentry kind="src" path="Chapter05"/>
+	<classpathentry kind="src" path="Chapter06"/>
+	<classpathentry kind="src" path="Chapter07"/>
+	<classpathentry kind="src" path="Chapter08"/>
+	<classpathentry kind="src" path="Chapter09"/>
+	<classpathentry kind="src" path="Chapter10"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="log4j-1.2.17.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

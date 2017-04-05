@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="UML">
+  <packagedElement xmi:type="uml:Package" xmi:id="_ekZosBCMEee_1_r2rY0hoQ" name="cn">
+    <packagedElement xmi:type="uml:Package" xmi:id="_ekjZsBCMEee_1_r2rY0hoQ" name="soso">
+      <packagedElement xmi:type="uml:Package" xmi:id="_ekjZsRCMEee_1_r2rY0hoQ" name="biz">
+        <packagedElement xmi:type="uml:Association" xmi:id="_eyr8UBCMEee_1_r2rY0hoQ" memberEnd="_eqWfsBCMEee_1_r2rY0hoQ _eyr8URCMEee_1_r2rY0hoQ">
+          <ownedEnd xmi:id="_eyr8URCMEee_1_r2rY0hoQ" name="SosoMgr" type="_ekjZshCMEee_1_r2rY0hoQ" association="_eyr8UBCMEee_1_r2rY0hoQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ekjZshCMEee_1_r2rY0hoQ" name="SosoMgr">
+          <ownedAttribute xmi:id="_eqNVwBCMEee_1_r2rY0hoQ" name="input" visibility="private" type="_epBC8BCMEee_1_r2rY0hoQ"/>
+          <ownedAttribute xmi:id="_eqWfsBCMEee_1_r2rY0hoQ" name="cardUtil" visibility="private" type="_elTAkBCMEee_1_r2rY0hoQ" association="_eyr8UBCMEee_1_r2rY0hoQ"/>
+          <ownedOperation xmi:id="_eqqBsBCMEee_1_r2rY0hoQ" name="mainMenu" visibility="public">
+            <ownedComment xmi:id="_eqzLoBCMEee_1_r2rY0hoQ">
+              <body>/** 
+ * 登录菜单
+ */
+</body>
+            </ownedComment>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eqzLoRCMEee_1_r2rY0hoQ" name="cardMenu" visibility="public">
+            <ownedComment xmi:id="_eq88oBCMEee_1_r2rY0hoQ">
+              <body>/** 
+ * 二级菜单
+ */
+</body>
+            </ownedComment>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eq88oRCMEee_1_r2rY0hoQ" name="registCard" visibility="public">
+            <ownedComment xmi:id="_eq88ohCMEee_1_r2rY0hoQ">
+              <body>/** 
+ * 用户注册流程
+ */
+</body>
+            </ownedComment>
+          </ownedOperation>
+          <ownedOperation xmi:id="_etxnIRCMEee_1_r2rY0hoQ" name="main" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_etxnIhCMEee_1_r2rY0hoQ" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_etxnIxCMEee_1_r2rY0hoQ" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_etxnJBCMEee_1_r2rY0hoQ"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_ek2UoBCMEee_1_r2rY0hoQ" name="entity">
+        <packagedElement xmi:type="uml:Class" xmi:id="_ek2UoRCMEee_1_r2rY0hoQ" name="ServicePackage" isAbstract="true">
+          <ownedAttribute xmi:id="_et7YIRCMEee_1_r2rY0hoQ" name="price" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_et7YIhCMEee_1_r2rY0hoQ" name="showInfo" visibility="public" isAbstract="true"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ek2UohCMEee_1_r2rY0hoQ" name="MobileCard">
+          <ownedComment xmi:id="_ek2UoxCMEee_1_r2rY0hoQ">
+            <body>/** 
+ * 嗖嗖移动卡
+ */
+</body>
+          </ownedComment>
+          <ownedAttribute xmi:id="_et7YIxCMEee_1_r2rY0hoQ" name="cardNumber" visibility="public">
+            <ownedComment xmi:id="_et7YJBCMEee_1_r2rY0hoQ">
+              <body>/** 
+ * 卡号
+ */
+</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_et7YJRCMEee_1_r2rY0hoQ" name="userName" visibility="public">
+            <ownedComment xmi:id="_et7YJhCMEee_1_r2rY0hoQ">
+              <body>/** 
+ * 用户名
+ */
+</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_et7YJxCMEee_1_r2rY0hoQ" name="passWord" visibility="public">
+            <ownedComment xmi:id="_et7YKBCMEee_1_r2rY0hoQ">
+              <body>/** 
+ * 密码
+ */
+</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_et7YKRCMEee_1_r2rY0hoQ" name="serPackage" visibility="public" type="_ek2UoRCMEee_1_r2rY0hoQ" association="_eyr8UhCMEee_1_r2rY0hoQ">
+            <ownedComment xmi:id="_euEiEBCMEee_1_r2rY0hoQ">
+              <body>/** 
+ * 所属套餐
+ */
+</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_euEiERCMEee_1_r2rY0hoQ" name="consumAmount" visibility="public">
+            <ownedComment xmi:id="_euEiEhCMEee_1_r2rY0hoQ">
+              <body>/** 
+ * 当月消费金额
+ */
+</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_euEiExCMEee_1_r2rY0hoQ" name="money" visibility="public">
+            <ownedComment xmi:id="_euEiFBCMEee_1_r2rY0hoQ">
+              <body>/** 
+ * 账户余额
+ */
+</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_euEiFhCMEee_1_r2rY0hoQ" name="realTalkTime" visibility="public">
+            <ownedComment xmi:id="_euEiFxCMEee_1_r2rY0hoQ">
+              <body>/** 
+ * 当月实际通话时长
+ */
+</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_euOTEBCMEee_1_r2rY0hoQ" name="realSMSCount" visibility="public">
+            <ownedComment xmi:id="_euOTERCMEee_1_r2rY0hoQ">
+              <body>/** 
+ * 当月实际发送短信条数
+ */
+</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_euOTEhCMEee_1_r2rY0hoQ" name="realFlow" visibility="public">
+            <ownedComment xmi:id="_euOTExCMEee_1_r2rY0hoQ">
+              <body>/** 
+ * 当月实际上网流量
+ */
+</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_euOTFBCMEee_1_r2rY0hoQ" name="getCardNumber" visibility="public">
+            <ownedParameter xmi:id="_euOTFRCMEee_1_r2rY0hoQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_euYEEBCMEee_1_r2rY0hoQ" name="setCardNumber" visibility="public">
+            <ownedParameter xmi:id="_euYEERCMEee_1_r2rY0hoQ" name="cardNumber">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_euYEEhCMEee_1_r2rY0hoQ" name="getUserName" visibility="public">
+            <ownedParameter xmi:id="_euYEExCMEee_1_r2rY0hoQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_euYEFBCMEee_1_r2rY0hoQ" name="setUserName" visibility="public">
+            <ownedParameter xmi:id="_euYEFRCMEee_1_r2rY0hoQ" name="userName">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_euYEFhCMEee_1_r2rY0hoQ" name="getPassWord" visibility="public">
+            <ownedParameter xmi:id="_euYEFxCMEee_1_r2rY0hoQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_euhOABCMEee_1_r2rY0hoQ" name="setPassWord" visibility="public">
+            <ownedParameter xmi:id="_euhOARCMEee_1_r2rY0hoQ" name="passWord">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_euhOAhCMEee_1_r2rY0hoQ" name="getSerPackage" visibility="public">
+            <ownedParameter xmi:id="_euhOAxCMEee_1_r2rY0hoQ" name="return" type="_ek2UoRCMEee_1_r2rY0hoQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_euhOBBCMEee_1_r2rY0hoQ" name="setSerPackage" visibility="public">
+            <ownedParameter xmi:id="_euhOBRCMEee_1_r2rY0hoQ" name="serPackage" type="_ek2UoRCMEee_1_r2rY0hoQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_euhOBhCMEee_1_r2rY0hoQ" name="getConsumAmount" visibility="public">
+            <ownedParameter xmi:id="_euhOBxCMEee_1_r2rY0hoQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_euq_ABCMEee_1_r2rY0hoQ" name="setConsumAmount" visibility="public">
+            <ownedParameter xmi:id="_euq_ARCMEee_1_r2rY0hoQ" name="consumAmount">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_euq_AhCMEee_1_r2rY0hoQ" name="getMoney" visibility="public">
+            <ownedParameter xmi:id="_euq_AxCMEee_1_r2rY0hoQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_euq_BBCMEee_1_r2rY0hoQ" name="setMoney" visibility="public">
+            <ownedParameter xmi:id="_euq_BRCMEee_1_r2rY0hoQ" name="money">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_euq_BhCMEee_1_r2rY0hoQ" name="getRealTalkTime" visibility="public">
+            <ownedParameter xmi:id="_euq_BxCMEee_1_r2rY0hoQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eu0I8BCMEee_1_r2rY0hoQ" name="setRealTalkTime" visibility="public">
+            <ownedParameter xmi:id="_eu0I8RCMEee_1_r2rY0hoQ" name="realTalkTime">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eu0I8hCMEee_1_r2rY0hoQ" name="getRealSMSCount" visibility="public">
+            <ownedParameter xmi:id="_eu0I8xCMEee_1_r2rY0hoQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eu0I9BCMEee_1_r2rY0hoQ" name="setRealSMSCount" visibility="public">
+            <ownedParameter xmi:id="_eu0I9RCMEee_1_r2rY0hoQ" name="realSMSCount">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eu958BCMEee_1_r2rY0hoQ" name="getRealFlow" visibility="public">
+            <ownedParameter xmi:id="_eu958RCMEee_1_r2rY0hoQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eu958hCMEee_1_r2rY0hoQ" name="setRealFlow" visibility="public">
+            <ownedParameter xmi:id="_eu958xCMEee_1_r2rY0hoQ" name="realFlow">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eu959BCMEee_1_r2rY0hoQ" name="showMeg" visibility="public"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_elJPkBCMEee_1_r2rY0hoQ" name="SuperPackage" clientDependency="_evQ05BCMEee_1_r2rY0hoQ _evQ05RCMEee_1_r2rY0hoQ _evQ05hCMEee_1_r2rY0hoQ">
+          <generalization xmi:id="_evQ05xCMEee_1_r2rY0hoQ" general="_ek2UoRCMEee_1_r2rY0hoQ"/>
+          <ownedAttribute xmi:id="_evQ06BCMEee_1_r2rY0hoQ" name="talkTime" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_evQ06RCMEee_1_r2rY0hoQ" name="smsCount" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_evQ06hCMEee_1_r2rY0hoQ" name="flow" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_evQ05BCMEee_1_r2rY0hoQ" name="CallService" supplier="_elJPkxCMEee_1_r2rY0hoQ" client="_elJPkBCMEee_1_r2rY0hoQ" contract="_elJPkxCMEee_1_r2rY0hoQ"/>
+          <interfaceRealization xmi:id="_evQ05RCMEee_1_r2rY0hoQ" name="SendService" supplier="_elJPlBCMEee_1_r2rY0hoQ" client="_elJPkBCMEee_1_r2rY0hoQ" contract="_elJPlBCMEee_1_r2rY0hoQ"/>
+          <interfaceRealization xmi:id="_evQ05hCMEee_1_r2rY0hoQ" name="NetService" supplier="_elJPlRCMEee_1_r2rY0hoQ" client="_elJPkBCMEee_1_r2rY0hoQ" contract="_elJPlRCMEee_1_r2rY0hoQ"/>
+          <ownedOperation xmi:id="_eval4BCMEee_1_r2rY0hoQ" name="showInfo" visibility="public"/>
+          <ownedOperation xmi:id="_eval4RCMEee_1_r2rY0hoQ" name="call" visibility="public">
+            <ownedParameter xmi:id="_eval4hCMEee_1_r2rY0hoQ" name="minCount">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_eval4xCMEee_1_r2rY0hoQ" name="card" type="_ek2UohCMEee_1_r2rY0hoQ"/>
+            <ownedParameter xmi:id="_eval5BCMEee_1_r2rY0hoQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eval5RCMEee_1_r2rY0hoQ" name="send" visibility="public">
+            <ownedParameter xmi:id="_eval5hCMEee_1_r2rY0hoQ" name="count">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_eval5xCMEee_1_r2rY0hoQ" name="card" type="_ek2UohCMEee_1_r2rY0hoQ"/>
+            <ownedParameter xmi:id="_eval6BCMEee_1_r2rY0hoQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_eval6RCMEee_1_r2rY0hoQ" name="netPlay" visibility="public">
+            <ownedParameter xmi:id="_eval6hCMEee_1_r2rY0hoQ" name="flow">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_eval6xCMEee_1_r2rY0hoQ" name="card" type="_ek2UohCMEee_1_r2rY0hoQ"/>
+            <ownedParameter xmi:id="_eval7BCMEee_1_r2rY0hoQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_eyr8UhCMEee_1_r2rY0hoQ" memberEnd="_et7YKRCMEee_1_r2rY0hoQ _eyr8UxCMEee_1_r2rY0hoQ">
+          <ownedEnd xmi:id="_eyr8UxCMEee_1_r2rY0hoQ" name="MobileCard" type="_ek2UohCMEee_1_r2rY0hoQ" association="_eyr8UhCMEee_1_r2rY0hoQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ek2UpBCMEee_1_r2rY0hoQ" name="TalkPackage" clientDependency="_evHq8BCMEee_1_r2rY0hoQ _evHq8RCMEee_1_r2rY0hoQ">
+          <generalization xmi:id="_evHq8hCMEee_1_r2rY0hoQ" general="_ek2UoRCMEee_1_r2rY0hoQ"/>
+          <ownedAttribute xmi:id="_evHq8xCMEee_1_r2rY0hoQ" name="talkTime" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_evHq9BCMEee_1_r2rY0hoQ" name="smsCount" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_evHq8BCMEee_1_r2rY0hoQ" name="CallService" supplier="_elJPkxCMEee_1_r2rY0hoQ" client="_ek2UpBCMEee_1_r2rY0hoQ" contract="_elJPkxCMEee_1_r2rY0hoQ"/>
+          <interfaceRealization xmi:id="_evHq8RCMEee_1_r2rY0hoQ" name="SendService" supplier="_elJPlBCMEee_1_r2rY0hoQ" client="_ek2UpBCMEee_1_r2rY0hoQ" contract="_elJPlBCMEee_1_r2rY0hoQ"/>
+          <ownedOperation xmi:id="_evHq9RCMEee_1_r2rY0hoQ" name="showInfo" visibility="public"/>
+          <ownedOperation xmi:id="_evHq9hCMEee_1_r2rY0hoQ" name="call" visibility="public">
+            <ownedParameter xmi:id="_evHq9xCMEee_1_r2rY0hoQ" name="minCount">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_evHq-BCMEee_1_r2rY0hoQ" name="card" type="_ek2UohCMEee_1_r2rY0hoQ"/>
+            <ownedParameter xmi:id="_evHq-RCMEee_1_r2rY0hoQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_evHq-hCMEee_1_r2rY0hoQ" name="send" visibility="public">
+            <ownedParameter xmi:id="_evHq-xCMEee_1_r2rY0hoQ" name="count">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_evHq_BCMEee_1_r2rY0hoQ" name="card" type="_ek2UohCMEee_1_r2rY0hoQ"/>
+            <ownedParameter xmi:id="_evHq_RCMEee_1_r2rY0hoQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_elJPlBCMEee_1_r2rY0hoQ" name="SendService">
+          <ownedOperation xmi:id="_evjv0BCMEee_1_r2rY0hoQ" name="send" visibility="public">
+            <ownedParameter xmi:id="_evjv0RCMEee_1_r2rY0hoQ" name="count">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_evjv0hCMEee_1_r2rY0hoQ" name="card" type="_ek2UohCMEee_1_r2rY0hoQ"/>
+            <ownedParameter xmi:id="_evjv0xCMEee_1_r2rY0hoQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_elJPkxCMEee_1_r2rY0hoQ" name="CallService">
+          <ownedOperation xmi:id="_eval9BCMEee_1_r2rY0hoQ" name="call" visibility="public">
+            <ownedParameter xmi:id="_eval9RCMEee_1_r2rY0hoQ" name="minCount">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_eval9hCMEee_1_r2rY0hoQ" name="card" type="_ek2UohCMEee_1_r2rY0hoQ"/>
+            <ownedParameter xmi:id="_eval9xCMEee_1_r2rY0hoQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_elJPkRCMEee_1_r2rY0hoQ" name="NetPackage" clientDependency="_eval7RCMEee_1_r2rY0hoQ">
+          <generalization xmi:id="_eval7hCMEee_1_r2rY0hoQ" general="_ek2UoRCMEee_1_r2rY0hoQ"/>
+          <interfaceRealization xmi:id="_eval7RCMEee_1_r2rY0hoQ" name="NetService" supplier="_elJPlRCMEee_1_r2rY0hoQ" client="_elJPkRCMEee_1_r2rY0hoQ" contract="_elJPlRCMEee_1_r2rY0hoQ"/>
+          <ownedOperation xmi:id="_eval7xCMEee_1_r2rY0hoQ" name="showInfo" visibility="public"/>
+          <ownedOperation xmi:id="_eval8BCMEee_1_r2rY0hoQ" name="netPlay" visibility="public">
+            <ownedParameter xmi:id="_eval8RCMEee_1_r2rY0hoQ" name="flow">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_eval8hCMEee_1_r2rY0hoQ" name="card" type="_ek2UohCMEee_1_r2rY0hoQ"/>
+            <ownedParameter xmi:id="_eval8xCMEee_1_r2rY0hoQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_elJPlRCMEee_1_r2rY0hoQ" name="NetService">
+          <ownedOperation xmi:id="_evjv1BCMEee_1_r2rY0hoQ" name="netPlay" visibility="public">
+            <ownedParameter xmi:id="_evjv1RCMEee_1_r2rY0hoQ" name="flow">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_evjv1hCMEee_1_r2rY0hoQ" name="card" type="_ek2UohCMEee_1_r2rY0hoQ"/>
+            <ownedParameter xmi:id="_evjv1xCMEee_1_r2rY0hoQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_elJPkhCMEee_1_r2rY0hoQ" name="service">
+        <packagedElement xmi:type="uml:Class" xmi:id="_elAFoBCMEee_1_r2rY0hoQ" name="ConsumInfo">
+          <ownedAttribute xmi:id="_evQ04RCMEee_1_r2rY0hoQ" name="cardNumber" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_evQ04hCMEee_1_r2rY0hoQ" name="type" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_evQ04xCMEee_1_r2rY0hoQ" name="consumData" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ek2UpRCMEee_1_r2rY0hoQ" name="Scene">
+          <ownedAttribute xmi:id="_evHq_hCMEee_1_r2rY0hoQ" name="type" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_evHq_xCMEee_1_r2rY0hoQ" name="data" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_evQ04BCMEee_1_r2rY0hoQ" name="description" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_elJPlhCMEee_1_r2rY0hoQ" name="utils">
+        <packagedElement xmi:type="uml:Class" xmi:id="_elTAkBCMEee_1_r2rY0hoQ" name="CardUtil">
+          <ownedAttribute xmi:id="_evjv2RCMEee_1_r2rY0hoQ" name="cards" visibility="public" type="_evjv2BCMEee_1_r2rY0hoQ">
+            <ownedComment xmi:id="_evjv2hCMEee_1_r2rY0hoQ">
+              <body>/** 
+ * 嗖嗖移动用户列表
+ */
+</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_evjv3BCMEee_1_r2rY0hoQ" name="consumInfos" visibility="public" type="_evjv2xCMEee_1_r2rY0hoQ">
+            <ownedComment xmi:id="_evjv3RCMEee_1_r2rY0hoQ">
+              <body>/** 
+ * 卡消费记录列表
+ */
+</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_evjv3hCMEee_1_r2rY0hoQ" name="initScene" visibility="public">
+            <ownedComment xmi:id="_evtg0BCMEee_1_r2rY0hoQ">
+              <body>/** 
+ */
+</body>
+            </ownedComment>
+          </ownedOperation>
+          <ownedOperation xmi:id="_evtg0hCMEee_1_r2rY0hoQ" name="isExistCard" visibility="public">
+            <ownedComment xmi:id="_evtg1hCMEee_1_r2rY0hoQ">
+              <body>/** 
+ * 根据卡号和密码验证该卡是否注册
+ * @param number
+ * @param passWord
+ * @return
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_evtg0xCMEee_1_r2rY0hoQ" name="number">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_evtg1BCMEee_1_r2rY0hoQ" name="passWord">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_evtg1RCMEee_1_r2rY0hoQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_evtg1xCMEee_1_r2rY0hoQ" name="isExistCard" visibility="public">
+            <ownedComment xmi:id="_evtg2hCMEee_1_r2rY0hoQ">
+              <body>/** 
+ * 根据卡号,验证该卡是否注册
+ * @param number
+ * @return
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_evtg2BCMEee_1_r2rY0hoQ" name="number">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_evtg2RCMEee_1_r2rY0hoQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_evtg2xCMEee_1_r2rY0hoQ" name="createNumber" visibility="public">
+            <ownedComment xmi:id="_ev3R0BCMEee_1_r2rY0hoQ">
+              <body>/** 
+ * 生成随机卡号
+ * @return
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_evtg3BCMEee_1_r2rY0hoQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ev3R0RCMEee_1_r2rY0hoQ" name="getNewNumbers" visibility="public">
+            <ownedComment xmi:id="_ev3R1BCMEee_1_r2rY0hoQ">
+              <body>/** 
+ * 生成随机卡号
+ * @param count
+ * @return
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_ev3R0hCMEee_1_r2rY0hoQ" name="count">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ev3R0xCMEee_1_r2rY0hoQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ev3R1RCMEee_1_r2rY0hoQ" name="addCard" visibility="public">
+            <ownedComment xmi:id="_ev3R1xCMEee_1_r2rY0hoQ">
+              <body>/** 
+ * 注册新卡
+ * @param card
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_ev3R1hCMEee_1_r2rY0hoQ" name="card" type="_ek2UohCMEee_1_r2rY0hoQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ev3R2BCMEee_1_r2rY0hoQ" name="delCard" visibility="public">
+            <ownedComment xmi:id="_ev3R2hCMEee_1_r2rY0hoQ">
+              <body>/** 
+ * 办理退网
+ * @param card
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_ev3R2RCMEee_1_r2rY0hoQ" name="card" type="_ek2UohCMEee_1_r2rY0hoQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ewAbwBCMEee_1_r2rY0hoQ" name="showRemainDetail" visibility="public">
+            <ownedComment xmi:id="_ewAbwhCMEee_1_r2rY0hoQ">
+              <body>/** 
+ * 套餐余量查询
+ * @param number
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_ewAbwRCMEee_1_r2rY0hoQ" name="number">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ewAbwxCMEee_1_r2rY0hoQ" name="showAmountDetail" visibility="public">
+            <ownedComment xmi:id="_ewAbxRCMEee_1_r2rY0hoQ">
+              <body>/** 
+ * 本月账单查询
+ * @param number
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_ewAbxBCMEee_1_r2rY0hoQ" name="number">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ewAbxhCMEee_1_r2rY0hoQ" name="addConsumInfo" visibility="public">
+            <ownedComment xmi:id="_ewAbyRCMEee_1_r2rY0hoQ">
+              <body>/** 
+ * 添加指定卡号的消费记录
+ * @param number
+ * @param info
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_ewAbxxCMEee_1_r2rY0hoQ" name="number">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ewAbyBCMEee_1_r2rY0hoQ" name="info" type="_elAFoBCMEee_1_r2rY0hoQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ewKMwBCMEee_1_r2rY0hoQ" name="useSoso" visibility="public">
+            <ownedComment xmi:id="_ewKMwhCMEee_1_r2rY0hoQ">
+              <body>/** 
+ * 使用嗖嗖
+ * @param number
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_ewKMwRCMEee_1_r2rY0hoQ" name="number">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ewKMwxCMEee_1_r2rY0hoQ" name="showDescription" visibility="public">
+            <ownedComment xmi:id="_ewKMxBCMEee_1_r2rY0hoQ">
+              <body>/** 
+ * 资费说明
+ */
+</body>
+            </ownedComment>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ewKMxRCMEee_1_r2rY0hoQ" name="changingPack" visibility="public">
+            <ownedComment xmi:id="_ewKMyBCMEee_1_r2rY0hoQ">
+              <body>/** 
+ * 套餐变更
+ * @param number
+ * @param packNum
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_ewKMxhCMEee_1_r2rY0hoQ" name="number">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ewKMxxCMEee_1_r2rY0hoQ" name="packNum">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ewTWsBCMEee_1_r2rY0hoQ" name="printConsumInfo" visibility="public">
+            <ownedComment xmi:id="_ewTWshCMEee_1_r2rY0hoQ">
+              <body>/** 
+ * 添加和打印消费清单
+ * @param number
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_ewTWsRCMEee_1_r2rY0hoQ" name="number">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ewTWsxCMEee_1_r2rY0hoQ" name="chargeMoney" visibility="public">
+            <ownedComment xmi:id="_ewTWthCMEee_1_r2rY0hoQ">
+              <body>/** 
+ * 话费充值
+ * @param number
+ * @param money
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_ewTWtBCMEee_1_r2rY0hoQ" name="number">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ewTWtRCMEee_1_r2rY0hoQ" name="money">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_eouIABCMEee_1_r2rY0hoQ" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_eouIARCMEee_1_r2rY0hoQ" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_epBC8BCMEee_1_r2rY0hoQ" name="Scanner"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_epKz8BCMEee_1_r2rY0hoQ" name="HashMap"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_epKz8RCMEee_1_r2rY0hoQ" name="Iterator"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_epKz8hCMEee_1_r2rY0hoQ" name="List"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_epKz8xCMEee_1_r2rY0hoQ" name="Map"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_epKz9BCMEee_1_r2rY0hoQ" name="Random"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_epKz9RCMEee_1_r2rY0hoQ" name="Set"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_evjv2BCMEee_1_r2rY0hoQ" name="Map&lt;String,MobileCard>"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_evjv2xCMEee_1_r2rY0hoQ" name="Map&lt;String,List&lt;ConsumInfo>>"/>
+</uml:Model>
